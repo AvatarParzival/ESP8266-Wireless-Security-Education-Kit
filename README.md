@@ -5,7 +5,9 @@ Educational firmware for the **ESP8266 NodeMCU** that demonstrates Wi-Fi deauthe
 
 ---
 
-![ESP8266 NodeMCU](https://raw.githubusercontent.com/nodemcu/nodemcu-devkit-v1.0/master/doc/NodeMCU_DEVKIT_1.0.jpg)
+<p align="center">
+  <img src="https://i.ibb.co/kV4rZKwH/funq3z3s-Photoroom.png" width="400"/>
+</p>
 
 ---
 
@@ -93,6 +95,29 @@ esptool.py --port COM3 write_flash -fm dout 0x00000 esp8266_deauther.bin
 - Press **RESET** on the NodeMCU  
 - The board should reboot and run the firmware  
 - Some versions may broadcast a Wi-Fi AP (for lab analysis only)  
+
+---
+
+## 🔐 Accessing the Management Portal (Lab Only)
+
+### Default Access (first boot)
+- **SSID (Wi-Fi name):** `pwned`  
+- **Password:** `deauther`  
+- **Web portal (gateway IP):** `192.168.4.1`  
+
+> ⚠️ These defaults are public knowledge. Do not keep them for lab work — change them immediately.
+
+### Changing Credentials (required for lab use)
+1. **Power on the NodeMCU** → it will broadcast the default AP (`pwned`).  
+2. **Connect your laptop/phone** using the password `deauther`.  
+3. **Open a browser** → go to [http://192.168.4.1](http://192.168.4.1).  
+4. In the portal, go to **Settings → AP Settings**.  
+5. **Change the SSID** to something lab-specific (e.g., `Lab-ESP8266`).  
+6. **Set a strong password** (12–16 characters).  
+7. **Save & reboot** → the ESP8266 will now broadcast with your new SSID and password.  
+8. Keep the device **isolated/offline** during labs. Power it down when not in use.  
+
+> ✅ Always set your own credentials before running demonstrations. Never expose the default `pwned/deauther` AP in a public environment.
 
 ---
 
