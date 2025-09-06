@@ -6,7 +6,7 @@ Educational firmware for the **ESP8266 NodeMCU** that demonstrates Wi-Fi deauthe
 ---
 
 <p align="center">
-  <img src="https://i.ibb.co/kV4rZKwH/funq3z3s-Photoroom.png" width="400"/>
+  <img src="https://i.ibb.co/nMZFsSwf/funq3z3s.png" width="400"/>
 </p>
 
 ---
